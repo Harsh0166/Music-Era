@@ -1,0 +1,121 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #DED5BC;
+    position: relative;
+}
+
+.img{
+ width: 320px;   
+}
+
+.menu{
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.active{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a:hover{
+    color: brown;
+    background-color: #DED5BC;
+}
+
+.home,.artist,.songs,.about,.contact{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.home .animate{
+    animation-iteration-count: infinite;
+}
+footer{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+.tinRightIn {
+    -webkit-animation-name: tinRightIn;
+    animation-name: tinRightIn;
+  }
+  
+  @-webkit-keyframes tinRightIn {
+    0% {
+      opacity: 0;
+      transform: scale(1, 1) translateX(900%);
+    }
+    50%, 70%, 90% {
+      opacity: 1;
+      transform: scale(1.1, 1.1) translateX(0);
+    }
+    60%, 80%, 100% {
+      opacity: 1;
+      transform: scale(1, 1) translateX(0);
+    }
+  }
+  @keyframes tinRightIn {
+    0% {
+      opacity: 0;
+      transform: scale(1, 1) translateX(900%);
+    }
+    50%, 70%, 90% {
+      opacity: 1;
+      transform: scale(1.1, 1.1) translateX(0);
+    }
+    60%, 80%, 100% {
+      opacity: 1;
+      transform: scale(1, 1) translateX(0);
+    }
+}
+  .magictime1 {
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+}
+.magictime2{
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+.magictime3{
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+}
+.magictime4{
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+}
+.magictime5{
+    animation-duration:1s;
+    animation-delay: 1.5s;
+}
+@media only screen and (max-width:600px){
+.menu{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+ 
+}
+
